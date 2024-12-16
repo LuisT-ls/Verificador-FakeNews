@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --warning-color: #f39c12;
+  --error-color: #e74c3c;
+  --success-color: #2ecc71;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.input-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+#checkButton {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#checkButton:hover {
+  background-color: #2980b9;
+}
+
+#checkButton:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: none;
+  text-align: center;
+  color: var(--secondary-color);
+  margin: 1rem 0;
+}
+
+.result {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.verification-result {
+  background-color: #f9f9f9;
+  border-left: 4px solid var(--secondary-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.false-rating { color: var(--error-color); }
+.true-rating { color: var(--success-color); }
+.partial-rating { color: var(--warning-color); }
+.warning-rating { color: var(--warning-color); }
+
+.additional-sources {
+  margin-top: 1rem;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.disclaimer {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
